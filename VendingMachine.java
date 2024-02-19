@@ -89,7 +89,10 @@ public class VendingMachine {
             int confirmation = sc.nextInt();
             if ( confirmation == 1){
                 System.out.println("Thank you for your transaction. You have $" + change + " in change.");
+            }else if( confirmation == 2){
+                System.out.println("Transaction successfully canceled. Your change is\n" + money);
             }
+            System.out.println("Thank you for snacking with us.\nHave a great day.");
             // include an else if they deny it and give their change back 
             // then give an exit message and i believe thats everything
         }
